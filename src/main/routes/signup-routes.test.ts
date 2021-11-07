@@ -16,7 +16,7 @@ describe('Signup Routes', () => {
     await accountCollection.deleteMany({})
   })
 
-  test('Should return an account on success', async () => {
+  it('Should return an account on success', async () => {
     await request(app)
       .post('/api/signup')
       .send({
@@ -26,6 +26,5 @@ describe('Signup Routes', () => {
         passwordConfirmation: '123'
       })
       .expect(200)
-      .expect({ ok: 'ok' })
   })
 })
