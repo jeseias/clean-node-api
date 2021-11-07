@@ -19,7 +19,13 @@ describe('Signup Routes', () => {
   test('Should return an account on success', async () => {
     await request(app)
       .post('/api/signup')
-      .send({ name: 'Jeseias Dominogos', email: 'domingosjeseias@gmail.com', password: '123', passwordConfirmation: '123' })
+      .send({
+        name: 'Jeseias Domingos',
+        email: 'domingosjeseias@gmail.com',
+        password: '123',
+        passwordConfirmation: '123'
+      })
       .expect(200)
+      .expect({ ok: 'ok' })
   })
 })
