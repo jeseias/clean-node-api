@@ -1,6 +1,6 @@
 # clean-node-api
 
-Building a full robust api with **Clean Architecture**
+Building a full robust api with  **Clean Architecture**
 
 ## Principles being followed
  - SOLID
